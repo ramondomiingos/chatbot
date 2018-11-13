@@ -2,16 +2,10 @@
 import  telepot
 import string
 bot = telepot.Bot("YOUR KEY")
-
-
-
 import time
 from telepot.loop import MessageLoop
 response = bot.getUpdates()
-
-
 def handle(msg):
-
     if(msg['chat']['type']=='supergroup'):
         chat_id= msg['chat']['id']
         command = msg['text']
@@ -65,9 +59,6 @@ def handle(msg):
           bot.sendMessage(chat_id, "http://conteudo.imguol.com.br/c/esporte/2013/06/17/17junho2013---neymar-faz-careta-em-treino-da-selecao-1371495702546_956x500.jpg")
     else:
             bot.sendMessage(chat_id, "Send command '/help'")
-
-
 MessageLoop(bot, handle).run_as_thread()
-
 while 1:
       time.sleep(10)
