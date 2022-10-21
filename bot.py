@@ -50,7 +50,7 @@ def handle(msg: Dict):
           bot.sendMessage(chat_id, "vo tacar o piruuuuuuuuuuuu")
     elif command == 'yoda' or command == '/yoda':
           bot.sendMessage(chat_id, "ÉOQ")
-    elif command == 'yoda' or command == '/porra' or command == '/caralho' or command == '/bct' or command == '/porra':
+    elif command == 'yoda' or command == '/porra' or command == '/caralho' or command == '/bct':
         bot.sendMessage(chat_id, "ÉOQ?! Fale palavrao aqui nao!")
     elif command == 'endpoint' or command == '/endpoint':
         import random
