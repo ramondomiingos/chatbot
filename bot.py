@@ -1,24 +1,25 @@
 # -*- coding: utf-8 -*-
+from typing import Dict
 import  telepot
 import string
 bot = telepot.Bot("YOUR KEY")
 import time
 from telepot.loop import MessageLoop
 response = bot.getUpdates()
-def handle(msg):
+
+def handle(msg: Dict):
     if(msg['chat']['type']=='supergroup'):
         chat_id= msg['chat']['id']
         command = msg['text']
-        #bot.sendMessage(chat_id, "Sim, entao Temos um grupo..."
 
     else:
         chat_id = msg['chat']['id']
         command = msg['text']
         nome = msg['chat']['first_name']
     command = string.replace(command, '@digiinforbot', '',1)
-    print command
+    print(command)
     if command == '/start':
-           bot.sendMessage(chat_id, "OLa, agora as coisas vao iniciar!")
+           bot.sendMessage(chat_id, "Olá, agora as coisas vao iniciar!")
     elif command == '/test':
            bot.sendMessage(chat_id, "Apenas teste!!!!")
     elif command == 'ola' or command ==  '/ola':
