@@ -56,6 +56,28 @@ def handle(msg: Dict):
         bot.sendMessage(chat_id, random.choice (a))
     elif command == 'ney' or command == '/ney':
           bot.sendMessage(chat_id, "http://conteudo.imguol.com.br/c/esporte/2013/06/17/17junho2013---neymar-faz-careta-em-treino-da-selecao-1371495702546_956x500.jpg")
+    elif command == 'manual' or command == '/manual':
+          bot.sendMessage(
+                  chat_id,
+                  """Comandos: 
+                  /start
+                  /test
+                  /ola
+                  /help
+                  /tijolada
+                  /juciano
+                  /crianzap
+                  /ain
+                  /joaozin
+                  /git
+                  /rosinha
+                  /rosinho
+                  /cafe
+                  /dadinho
+                  /taca
+                  /endpoint
+                  """
+          )
     else:
             bot.sendMessage(chat_id, "Send command '/help'")
 MessageLoop(bot, handle).run_as_thread()
