@@ -31,7 +31,7 @@ def handle(msg: Dict):
     elif command == '/juciano':
           bot.sendMessage(chat_id, "Eeeeeee. Bits e Bytes!")
     elif command == '/crianzap':
-          bot.sendMessage(chat_id, "Chupa meu pinto entao...Seu VAGABUNDO.")
+          bot.sendMessage(chat_id, "Chupa meu pinto então...Seu VAGABUNDO.")
     elif command == '/ain':
           bot.sendMessage(chat_id, "Ain pai para...")
     elif command == '/joaozin':
@@ -43,13 +43,13 @@ def handle(msg: Dict):
     elif command == 'rosinho' or command == '/rosinho':
           bot.sendMessage(chat_id, "https://i.pinimg.com/originals/c6/0b/37/c60b372f6981564d693be3f99da534c2.jpg")
     elif command == 'cafe' or command == '/cafe':
-          bot.sendMessage(chat_id, "EU QUERO CAFE")
+          bot.sendMessage(chat_id, "EU QUERO CAFÉ")
     elif command == 'dadinho' or command == '/dadinho':
-          bot.sendMessage(chat_id, "dadinho o caralho..meu nome agora e ze pequeno")
+          bot.sendMessage(chat_id, "dadinho o caralho..meu nome agora e zé pequeno")
     elif command == 'taca' or command == '/taca':
           bot.sendMessage(chat_id, "vo tacar o piruuuuuuuuuuuu")
     elif command == 'yoda' or command == '/porra' or command == '/caralho' or command == '/bct':
-        bot.sendMessage(chat_id, "ÉOQ?! Fale palavrao aqui nao!")
+        bot.sendMessage(chat_id, "ÉOQ?! Fale palavrão aqui nao!")
     elif command == 'endpoint' or command == '/endpoint':
         import random
         a = ['@ramondomiingos', '@hugo_dsilva', '@Tawan_SF']
